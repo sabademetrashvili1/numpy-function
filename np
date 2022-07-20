@@ -1,0 +1,62 @@
+import numpy as np
+
+dt = np.dtype(np.int8)
+
+s = np.array([1.654, 5, 4])
+b = np.array([5, 6, 2])
+
+print("return arr1 + arr2: ", np.add(s, b))
+print("return reciprocal number", np.reciprocal(s))
+print("return negative number", np.negative(s))
+print("return positive number: ", np.positive(s))
+print("return arr1 * arr2: ", np.multiply(s, b))
+print("return arr1 / arr2: ", np.divide(s, b))
+print("return arr1 ** arr2", np.power(s, b))
+print("return arr1 - arr2", np.subtract(s, b))
+print("return true divide", np.true_divide(s, b))
+print("return floor divide", np.floor_divide(s, b))
+print("return float power", np.float_power(s, b))
+print("return arr1 // arr2", np.fmod(s, b))
+print("return arr1 % arr2", np.mod(s, b))
+print("return", np.remainder(s, b))
+print("return", np.divmod(s, b))
+
+print("\n\n")
+
+print("return array sin", np.sin(s))
+print("return array cos", np.cos(s))
+print("return array tan", np.tan(s))
+print("return array arctan", np.arctan(s))
+print("return hypotenuse", np.hypot(s, b))
+print("return radians", np.radians(s), "\n", np.degrees(s))
+
+print("\n\n")
+
+print("return exponential", np.exp(s))
+print("return exp(x)-1", np.expm1(s))
+print("return exp 2 ** x", np.exp2(s))
+print("return logarithm", np.log(s))
+print("return logarithm(10)", np.log10(s))
+print("return logarithm(2)", np.log2(s))
+print("return logarithm of the sum of exponentiations of all inputs", np.logaddexp(s, b), "\n", np.logaddexp2(s, b))
+
+print("\n\n")
+
+print("return Rounds the elements of an input array upto given decimal places", np.around(s, 5))
+print("return Rounds the elements of an input array upto given decimal places", np.round(s, 3))
+print("return Round the elements of an input array to the nearest integer towards zero", np.rint(s))
+print("return Round the elements of an input array to the nearest integer towards zero", np.fix(s))
+print("return floor number", np.floor(s))
+print("return ceil number", np.ceil(s))
+print("return Return the truncated value of an input array element wise", np.trunc(s))
+
+print('\n\n')
+
+print("return sqrt(arr1)", np.sqrt(s))
+print("return cube(arr1)", np.cbrt(s))
+print("return absolute value", np.absolute(s))
+print('return maximum numbers (arr1) and (arr2) etc', np.maximum(s, b))
+print("return minimum numbers (arr1) and (arr2) etc", np.minimum(s, b))
+print("return one dimensional linear", np.interp(2.5, s, b))
+print("return two dimensional linear", np.convolve(s, 8))
+print("return numbers min between max", np.clip(s, 0, 3))
